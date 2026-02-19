@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-dark: #020617;
+    --card-bg: rgba(30, 41, 59, 0.5);
+    --verix-cyan: #38bdf8;
+    --verix-purple: #c084fc;
+    --raw-gray: #94a3b8;
+    --text-white: #f8fafc;
+    --accent-red: #ef4444;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- BACKGROUND DECORATION --- */
+.bg-blobs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.blob-1 { top: -100px; right: -100px; }
+.blob-2 { bottom: -100px; left: -100px; background: radial-gradient(circle, rgba(192, 132, 252, 0.1) 0%, transparent 70%); }
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* --- LAYOUT --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--glass-border);
+    margin-bottom: 4rem;
+}
+
+.hero-tag {
+    color: var(--verix-cyan);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-tag::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: var(--verix-cyan);
+}
+
+h1.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.9;
+    margin-bottom: 2rem;
+}
+
+.hero-desc {
+    font-size: 1.25rem;
+    color: var(--raw-gray);
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+/* --- GRID SYSTEM --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--verix-cyan);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card .icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--verix-cyan);
+}
+
+.card p {
+    color: var(--raw-gray);
+    font-size: 0.95rem;
+}
+
+.card .date {
+    font-size: 0.8rem;
+    color: var(--verix-purple);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* --- MATRIX LINKS --- */
+.link-list {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.matrix-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.matrix-link:hover {
+    background: rgba(56, 189, 248, 0.1);
+    border-color: var(--verix-cyan);
+    color: var(--verix-cyan);
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 4rem 0;
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 8rem;
+    color: var(--raw-gray);
+    font-size: 0.8rem;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
