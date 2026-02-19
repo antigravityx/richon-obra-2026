@@ -4,145 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richon | Diseño & Software de Alto Impacto</title>
+    <title>Richon | Master Hub 2026</title>
     <link rel="stylesheet" href="portfolio-2026/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .hero-section {
-            background: linear-gradient(135deg, rgba(2, 6, 23, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 4rem;
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--verix-cyan);
-            color: var(--bg-dark);
-            text-decoration: none;
-            font-weight: 800;
-            border-radius: 50px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-            margin-top: 2rem;
-            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(56, 189, 248, 0.5);
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--glass-border);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: left;
-            transition: border-color 0.3s;
-        }
-
-        .service-card:hover {
-            border-color: var(--verix-purple);
-        }
-
-        .price-tag {
-            font-size: 0.8rem;
-            color: var(--verix-cyan);
-            background: rgba(56, 189, 248, 0.1);
-            padding: 4px 12px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 
-<body>
+<body style="background: #050810;">
     <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+        <div class="blob blob-1"
+            style="width: 600px; height: 600px; background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);">
+        </div>
+        <div class="blob blob-2"
+            style="width: 600px; height: 600px; background: radial-gradient(circle, rgba(129, 140, 248, 0.1) 0%, transparent 70%);">
+        </div>
     </div>
 
-    <div class="container">
-        <header class="animate" style="min-height: auto; padding: 4rem 0;">
-            <div class="hero-tag">SERVICIOS DE ÉLITE | 2026</div>
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">SOLUCIONES <span
-                    style="color: var(--verix-cyan);">VERÍDICAS</span></h1>
-            <p class="hero-desc">
-                No vendo humo. Vendo 37 años de experiencia resolviendo problemas reales con diseño que impacta y
-                software que funciona.
+    <nav
+        style="height: 80px; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); position: sticky; top: 0; background: rgba(5,8,16,0.8); backdrop-filter: blur(20px); z-index: 100;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="mono" style="font-weight: 800; color: var(--verix-cyan); letter-spacing: 2px;">R1CH0N_HUB</div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#services" style="text-decoration: none; color: var(--raw-gray); font-size: 0.8rem;"
+                    class="mono">//SERVICIOS</a>
+                <a href="#contact" style="text-decoration: none; color: var(--raw-gray); font-size: 0.8rem;"
+                    class="mono">//CONTACTO</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 8rem;">
+        <header class="animate" style="min-height: auto; text-align: center; border: none; margin-bottom: 8rem;">
+            <div class="hero-tag animate" style="justify-content: center;">CONSTRUCCIÓN VERÍDICA Y CRUDA</div>
+            <h1 class="hero-glow animate delay-1">RICHON</h1>
+            <p class="hero-desc animate delay-2" style="margin: 0 auto 3rem; font-size: 1.5rem; max-width: 800px;">
+                Soluciones de alto impacto visual y técnico. Donde el diseño se vuelve código y el código adquiere alma.
             </p>
-            <a href="https://wa.me/56912345678" class="cta-button">Iniciar Proyecto</a>
+            <div class="animate delay-3" style="display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="#contact" class="nexus-submit"
+                    style="width: auto; padding: 1rem 3rem; text-decoration: none;">Iniciar Proyecto</a>
+                <a href="portfolio-2026/index.html" class="matrix-link"
+                    style="background: transparent; border: 1px solid var(--glass-border);">Ver Portafolio</a>
+            </div>
         </header>
 
-        <section class="animate delay-1">
-            <div class="project-grid">
-                <!-- DESIGN SERVICE -->
-                <div class="service-card">
-                    <span class="price-tag">DISEÑO E IDENTIDAD</span>
-                    <h2 class="mono">FORJA VISUAL</h2>
-                    <p style="margin: 1.5rem 0; color: var(--raw-gray);">
-                        Logos, Branding, Cartelería y Redes. He construido la imagen de gigantes locales como Mega Toto.
-                        Tu marca merece ser recordada, no ignorada.
+        <section id="services" class="animate delay-3">
+            <h2 class="mono" style="text-align: center; margin-bottom: 4rem; color: var(--verix-purple);">// SERVICIOS
+                DE ÉLITE</h2>
+            <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+
+                <!-- FORJA VISUAL -->
+                <div class="service-card-premium">
+                    <div style="font-size: 3rem; margin-bottom: 2rem;">🎨</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">FORJA VISUAL</h3>
+                    <p style="color: var(--raw-gray); line-height: 1.8; margin-bottom: 2rem;">
+                        Diseño gráfico con propósito. Branding, cartelería corporativa y marketing estratégico. Tu marca
+                        no solo debe verse bien; debe dominar su entorno.
                     </p>
-                    <ul style="list-style: none; color: var(--raw-gray); font-size: 0.9rem;">
-                        <li><i class="fas fa-check" style="color: var(--verix-cyan);"></i> Identidad Corporativa</li>
-                        <li><i class="fas fa-check" style="color: var(--verix-cyan);"></i> Diseño para Impresión</li>
-                        <li><i class="fas fa-check" style="color: var(--verix-cyan);"></i> Campañas Digitales</li>
-                    </ul>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <span class="price-tag mono">Identidad</span>
+                        <span class="price-tag mono">Branding</span>
+                        <span class="price-tag mono">Corrientes Local</span>
+                    </div>
                 </div>
 
-                <!-- SOFTWARE SERVICE -->
-                <div class="service-card">
-                    <span class="price-tag">CÓDIGO & AUTOMATIZACIÓN</span>
-                    <h2 class="mono">NÚCLEO DIGITAL</h2>
-                    <p style="margin: 1.5rem 0; color: var(--raw-gray);">
-                        Desarrollo Web, Dashboards de gestión y sistemas personalizados. Si lo puedes imaginar, puedo
-                        programar el alma que lo haga funcionar.
+                <!-- NÚCLEO DIGITAL -->
+                <div class="service-card-premium">
+                    <div style="font-size: 3rem; margin-bottom: 2rem;">⚡</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">NÚCLEO DIGITAL</h3>
+                    <p style="color: var(--raw-gray); line-height: 1.8; margin-bottom: 2rem;">
+                        Desarrollo full-stack moderno. Automatización de procesos, herramientas de gestión y
+                        arquitecturas escalables compatibles con el ecosistema Verix.
                     </p>
-                    <ul style="list-style: none; color: var(--raw-gray); font-size: 0.9rem;">
-                        <li><i class="fas fa-check" style="color: var(--verix-purple);"></i> Web Apps Full Stack</li>
-                        <li><i class="fas fa-check" style="color: var(--verix-purple);"></i> Sistemas de Gestión
-                            (CRM/POS)</li>
-                        <li><i class="fas fa-check" style="color: var(--verix-purple);"></i> Integración de I.A.</li>
-                    </ul>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <span class="price-tag mono">Next/Vite</span>
+                        <span class="price-tag mono">Automations</span>
+                        <span class="price-tag mono">Nexus Flow</span>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <section class="animate delay-2" style="margin-top: 6rem; text-align: center;">
-            <div class="hero-section">
-                <h3 class="mono" style="color: var(--verix-cyan);">¿TRABAJAMOS JUNTOS?</h3>
-                <p style="color: var(--raw-gray); margin-top: 1rem;">
-                    Cada proyecto es tratado como una pieza única de ingeniería y arte.
-                </p>
-                <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                    <div style="text-align: center;">
-                        <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25D366;"></i>
-                        <p class="mono" style="margin-top: 10px;">WhatsApp</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <i class="fas fa-envelope-open-text" style="font-size: 2.5rem; color: var(--verix-cyan);"></i>
-                        <p class="mono" style="margin-top: 10px;">Email</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <i class="fab fa-telegram" style="font-size: 2.5rem; color: #0088cc;"></i>
-                        <p class="mono" style="margin-top: 10px;">Telegram</p>
-                    </div>
-                </div>
-            </div>
+        <section id="contact" class="animate delay-3" style="margin-top: 10rem;">
+            <h2 class="mono" style="text-align: center; margin-bottom: 2rem; color: var(--verix-cyan);">// BUZÓN NEXUS
+            </h2>
+            <p style="text-align: center; color: var(--raw-gray); max-width: 500px; margin: 0 auto 3rem;">
+                Deja tu mensaje o solicitud de presupuesto. La consulta se grabará directamente en el Santuario privado
+                del Director.
+            </p>
+
+            <form class="nexus-form" id="contactForm">
+                <input type="text" id="clientName" class="nexus-input" placeholder="Tu Nombre / Empresa" required>
+                <input type="email" id="clientEmail" class="nexus-input" placeholder="Email de Contacto" required>
+                <textarea id="clientMsg" class="nexus-input" rows="6"
+                    placeholder="Cuéntame tu idea o necesidad técnica..." style="resize: none;" required></textarea>
+                <button type="submit" class="nexus-submit" id="submitBtn">ENVIAR CONSULTA AL SANTUARIO</button>
+                <div id="formStatus" class="mono"
+                    style="margin-top: 1rem; text-align: center; font-size: 0.8rem; display: none;"></div>
+            </form>
         </section>
 
-        <footer>
-            <p class="mono">Operado por Verix para Director Richon</p>
-            <p style="font-size: 0.7rem; margin-top: 10px;">Soberanía Digital Garantizada.</p>
+        <footer style="margin-top: 10rem;">
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+                <a href="https://wa.me/56912345678" style="color: var(--verix-cyan); font-size: 1.5rem;"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/antigravityx" style="color: var(--verix-cyan); font-size: 1.5rem;"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://open.spotify.com/intl-es/artist/7jrAPWqrHkBmGRFyT5bKuR"
+                    style="color: var(--verix-cyan); font-size: 1.5rem;"><i class="fab fa-spotify"></i></a>
+            </div>
+            <p class="mono" style="color: #334155; font-size: 0.7rem;">RICHON_ENGINE_2026 // OPERATED BY VERIX SOUL</p>
         </footer>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+
+            btn.disabled = true;
+            btn.innerText = "SINCRONIZANDO...";
+            status.style.display = "block";
+            status.style.color = "var(--verix-cyan)";
+            status.innerText = "> Iniciando protocolo de transmisión...";
+
+            const data = {
+                nombre: document.getElementById('clientName').value,
+                email: document.getElementById('clientEmail').value,
+                mensaje: document.getElementById('clientMsg').value,
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                // Intentamos conectar con el servidor local Verix (Nodo Nucleo)
+                const response = await fetch('http://localhost:5000/api/nexus/ticket', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    status.style.color = "#4ade80";
+                    status.innerText = "> [EXITO] Mensaje grabado en el Santuario.";
+                    document.getElementById('contactForm').reset();
+                } else {
+                    throw new Error("Nodo fuera de línea");
+                }
+            } catch (err) {
+                // Fallback si el nodo local no está activo
+                status.style.color = "var(--verix-purple)";
+                status.innerText = "> [AVISO] El Nodo local está offline. Por favor, usa WhatsApp para urgencias.";
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "ENVIAR CONSULTA AL SANTUARIO";
+            }
+        });
+    </script>
 </body>
 
 </html>
